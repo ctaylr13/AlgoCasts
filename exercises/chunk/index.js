@@ -27,6 +27,22 @@ function chunk(array, size) {
     return total;
 }
 
-
-
 module.exports = chunk;
+
+
+// function chunk2(array, size) {
+//     // create empty 'chunked' array
+//     const chunked = [];
+//     // create index start at 0
+//     let index = 0;
+//     // while index is less  than array. length 
+//     while(index < array.length) {
+//         //push a slice  of index 'size' from  'array' into 'chunked'
+//         chunked.push(array.slice(index, index + size));
+//         //add size to 'index'
+//         index += size;
+//     }
+        
+//         //add size to 'index'
+//     return chunked;
+// }
