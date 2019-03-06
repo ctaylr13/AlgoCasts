@@ -14,6 +14,17 @@
 //       ' ### '
 //       '#####'
 
-function pyramid(n) {}
+function pyramid(n) {
+    var maxLength = (n - 1) + n;
+    var length = 0;
+    var sideSpaces;
+    for(var i = 1; i <= n; i++) {
+        length = (i - 1) + i;
+        sideSpaces = (maxLength - length) / 2;
+        console.log(" ".repeat(sideSpaces) + '#'.repeat(length) + " ".repeat(sideSpaces));
+    }
+}
+
+console.log(pyramid(8));
 
 module.exports = pyramid;
